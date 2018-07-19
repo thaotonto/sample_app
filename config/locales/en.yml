@@ -2,62 +2,6 @@ en:
   english: "en"
   vietnamese: "vi"
 
-  layouts:
-    header:
-      home: "Home"
-      help: "Help"
-      login: "Login"
-    footer:
-      about: "About"
-      contact: "Contact"
-      news: "News"
-      credit_html: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
-      by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
-    application:
-      page_title: "Ruby on Rails Tutorial sample App"
-
-  users:
-    news:
-      signup: "Sign up"
-    new:
-      signup: "Sign up"
-      name: "Name"
-      email: "Email"
-      password: "Password"
-      password_confirmation: "Password Confirmation"
-      signup-btn: "Create my account"
-    create:
-      welcome: "Welcome to Sample App!"
-    show:
-      cannot_find_user: "Can not find this user."
-
-  activerecord:
-    errors:
-      models:
-        user:
-          attributes:
-            name:
-              blank: "Name can't be blank"
-            email:
-              blank: "Email can't be blank"
-              invalid: "Email is invalid"
-              taken: "Email has already been taken"
-            password:
-              blank: "Password can't be blank"
-              too_short: "Password too short (minimum is 6 characters)"
-            password_confirmation:
-              confirmation: "Password confirmation doesn't match"
-  errors:
-    format: "%{message}"
-
-  helpers:
-    label:
-      user:
-        name: "Name"
-        email: "Email"
-        password: "Password"
-        password_confirmation: "Password Confirmation"
-
   shared:
     error_messages:
       message: "The form contains "
@@ -86,3 +30,72 @@ en:
       contact_title: "Contact"
       contact_detail_html: "Contact the Ruby on Rails Tutorial about the sample app at the
       <a href='http://www.railstutorial.org/contact'>contact page</a>."
+
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Name can't be blank"
+            email:
+              blank: "Email can't be blank"
+              invalid: "Email is invalid"
+              taken: "Email has already been taken"
+            password:
+              blank: "Password can't be blank"
+              too_short: "Password too short (minimum is 6 characters)"
+            password_confirmation:
+              confirmation: "Password confirmation doesn't match"
+
+  layouts:
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Login"
+      logout: "Log out"
+      profile: "Profile"
+      settings: "Settings"
+      account: "Account"
+      users: "Users"
+    footer:
+      about: "About"
+      contact: "Contact"
+      news: "News"
+      credit_html: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+      by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+    application:
+      page_title: "Ruby on Rails Tutorial sample App"
+
+  users:
+    news:
+      signup: "Sign up"
+    new:
+      signup: "Sign up"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+      signup-btn: "Create my account"
+    create:
+      welcome: "Welcome to Sample App!"
+    show:
+      cannot_find_user: "Can not find this user."
+
+  errors:
+    format: "%{message}"
+
+  sessions:
+    new:
+      email: "Email"
+      password: "Password"
+      login: "Log in"
+      newuser: "New user? "
+      sign_up_now: "Sign up now!"
+      signup_html: "<a href='/signup'>Register</a>"
+    create:
+      login_fail: "Invalid email/password combination."
+    user:
+      label:
+        email: "Email"
+        password: "Password"
