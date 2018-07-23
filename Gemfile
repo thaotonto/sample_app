@@ -13,8 +13,10 @@ gem "coffee-rails", "~> 4.2"
 gem "jbuilder", "~> 2.5"
 gem "turbolinks", "~> 5"
 
+gem "bcrypt"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "3.3.7"
+gem "config"
 gem "rubocop", "~> 0.54.0", require: false
 
 group :development, :test do
