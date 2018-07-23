@@ -17,9 +17,51 @@ vi:
       page_title: "Hướng dẫn Ruby on Rails"
 
   users:
+    news:
+      signup: "Đăng ký"
     new:
-      signup_title: "Đăng ký"
-      signup_detail: "Đây là trang đăng ký của người dùng mới."
+      signup: "Đăng ký"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      signup-btn: "Tạo tài khoản"
+    create:
+      welcome: "Chào mừng bạn đến với Sample App!"
+    show:
+      cannot_find_user: "Không thể tìm thấy người dùng này."
+
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Tên không được để trống"
+            email:
+              blank: "Email không được để trống"
+              invalid: "Email không hợp lệ"
+              taken: "Email đã tồn tại"
+            password:
+              blank: "Mật khẩu không được để trống"
+              too_short: "Mật khẩu quá ngắn"
+            password_confirmation:
+              confirmation: "Mật khẩu không trùng khớp"
+  errors:
+    format: "%{message}"
+
+  helpers:
+    label:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+
+  shared:
+    error_messages:
+      message: "Form của bạn có "
+      error: " lỗi"
 
   static_pages:
     home:
