@@ -89,5 +89,6 @@ vi:
       password: "Mật khẩu"
       newuser: "Thành viên mới? "
       sign_up_now: "Đăng ký ngay!"
+      remember: "Nhớ tài khoản"
     create:
       login_fail: "Email hoặc mật khẩu không chính xác."
