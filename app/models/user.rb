@@ -1,20 +1,21 @@
 class User < ApplicationRecord
   attr_reader :remember_token
-  before_save :downcase_email
-  has_secure_password
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
   validates :name, presence: true,
     length: {maximum: Settings.user_setting.name_maximum_length}
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true,
     length: {maximum: Settings.user_setting.email_maximum_length},
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
-  validates :password, presence: true,
+  validates :password, presence: true, allow_nil: true,
     length: {minimum: Settings.user_setting.password_minimum_length}
+  has_secure_password
+  before_save :downcase_email
 
   def remember
-    self.remember_token = User.new_token
-    update_attribute :remember_digest, User.digest(remember_token)
+    @remember_token = User.new_token
+    update_attributes remember_digest: User.digest(remember_token)
   end
 
   def authenticated? remember_token
@@ -23,7 +24,11 @@ class User < ApplicationRecord
   end
 
   def forget
-    update_attribute :remember_digest, nil
+    update_attributes remember_digest: nil
+  end
+
+  def current_user? user
+    user == self
   end
 
   class << self

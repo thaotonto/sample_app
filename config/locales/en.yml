@@ -68,19 +68,38 @@ en:
       page_title: "Ruby on Rails Tutorial sample App"
 
   users:
-    news:
-      signup: "Sign up"
-    new:
-      signup: "Sign up"
+    form:
       name: "Name"
       email: "Email"
       password: "Password"
       password_confirmation: "Password Confirmation"
+    news:
+      signup: "Sign up"
+    new:
+      signup: "Sign up"
       signup-btn: "Create my account"
     create:
       welcome: "Welcome to Sample App!"
     show:
       cannot_find_user: "Can not find this user."
+    edit:
+      edit: "Edit account"
+      edit_title: "Update your profile"
+      edit_btn: "Save changes"
+      change: "Change"
+      pls_log_in: "Please log in"
+    index:
+      user: "User"
+      all_users: "All users"
+      pls_log_in: "Please log in"
+    user:
+      sure: "You sure?"
+      delete: "Delete"
+    destroy:
+      delete_success: "Deleted successfully!"
+      delete_fail: "Delete fail!"
+    update:
+      update_success: "Profile Updated"
 
   errors:
     format: "%{message}"
