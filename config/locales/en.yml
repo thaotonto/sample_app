@@ -2,6 +2,8 @@ en:
   english: "en"
   vietnamese: "vi"
 
+  app_name: "Sample App"
+
   shared:
     error_messages:
       message: "The form contains "
@@ -119,3 +121,13 @@ en:
       label:
         email: "Email"
         password: "Password"
+
+  activate_mail:
+    title: "Account activation"
+    activate: "Activate"
+    greeting: "Hi"
+    content: "Welcome to the Sample App! Click on the link below to activate your account."
+    noti: "Please check your email to activate your account."
+    success: "Account activated!"
+    fail: "Invalid activation link"
+    message: "Account not activated. Check your email for the activation link."
