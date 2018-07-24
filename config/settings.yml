@@ -3,5 +3,6 @@ user_setting:
   email_maximum_length: 255
   password_minimum_length: 6
   gravatar_size: 50
+  password_reset_expired: 2
 
 paginate_per: 3

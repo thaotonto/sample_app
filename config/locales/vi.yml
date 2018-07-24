@@ -123,3 +123,20 @@ vi:
     success: "Tài khoản đã được kích hoạt!"
     fail: "Link kích hoạt sai."
     message: "Tài khoản chưa được kích hoạt, hãy kiểm tra email của bạn."
+
+  forgot_password:
+    title: "Quên mật khẩu?"
+    submit: "Xác nhận"
+    confirmation: "Xác nhận"
+    update: "Cập nhật mật khẩu"
+    info: "Một email chứa hướng dẫn đổi mật khẩu đã được gửi đến hòm thư của bạn"
+    not_found: "Địa chỉ email không tồn tại"
+    user_error_add: "không thể để trống"
+    success: "Mật khẩu đã được thiết lập lại"
+    expired: "Thiết lập lại mật khẩu đã hết hạn"
+
+  reset_mail:
+    title: "Thiết lập mới mật khẩu"
+    click_link: "Để thiết lập lại mật khẩu của bạn hãy truy cập vào link dưới đây:"
+    link_expire: "Đường link sẽ hết hạn sau 2 tiếng"
+    info: "Nếu bạn không yêu cầu thiết lập lại mật khẩu thì vui lòng hãy bỏ qua thư này!"
