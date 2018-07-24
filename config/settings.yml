@@ -2,3 +2,6 @@ user_setting:
   name_maximum_length: 50
   email_maximum_length: 255
   password_minimum_length: 6
+  gravatar_size: 50
+
+paginate_per: 3
