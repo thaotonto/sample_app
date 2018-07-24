@@ -6,6 +6,11 @@ class Micropost < ApplicationRecord
    length: {maximum: Settings.micropost.content_maximum}
   validate :picture_size
   scope :order_micropost, ->{order created_at: :desc}
+  following_ids = "SELECT followed_id FROM relationships
+    WHERE follower_id = :user_id"
+  scope :feed_microposts, (lambda do |id|
+    where "user_id IN (#{following_ids}) OR user_id = :user_id", user_id: id
+  end)
 
   private
 

@@ -103,6 +103,10 @@ en:
     update:
       update_success: "Profile Updated"
     delete_confirm: "You sure?"
+    following: "Following"
+    follower: "Follower"
+    follow: "Follow"
+    unfollow: "Unfollow"
 
   errors:
     format: "%{message}"
