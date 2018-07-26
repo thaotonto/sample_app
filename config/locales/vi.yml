@@ -2,6 +2,8 @@ vi:
   english: "en"
   vietnamese: "vi"
 
+  app_name: "Sample App"
+
   shared:
     error_messages:
       message: "Form của bạn có "
@@ -111,3 +113,13 @@ vi:
       remember: "Nhớ tài khoản"
     create:
       login_fail: "Email hoặc mật khẩu không chính xác."
+
+  activate_mail:
+    title: "Kích hoạt tài khoản"
+    activate: "Kích hoạt"
+    greeting: "Xin chào"
+    content: "Chào mừng bạn đến với ứng dụng mẫu, vui lòng truy cập vào đường dẫn dưới đây để kích hoạt tài khoản của bạn"
+    noti: "Chúng tôi đã gửi email kích hoạt. Hãy kiểm tra hòm thư của bạn."
+    success: "Tài khoản đã được kích hoạt!"
+    fail: "Link kích hoạt sai."
+    message: "Tài khoản chưa được kích hoạt, hãy kiểm tra email của bạn."
