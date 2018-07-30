@@ -17,10 +17,12 @@ gem "turbolinks", "~> 5"
 gem "bcrypt"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "3.3.7"
+gem "carrierwave"
 gem "config"
 gem "faker"
 gem "figaro"
 gem "kaminari"
+gem "mini_magick"
 gem "rubocop", "~> 0.54.0", require: false
 
 group :development, :test do
@@ -32,6 +34,10 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
+end
+
+group :production do
+  gem "fog"
 end
 
 group :test do

@@ -47,7 +47,10 @@ vi:
               too_short: "Mật khẩu quá ngắn"
             password_confirmation:
               confirmation: "Mật khẩu không trùng khớp"
-
+        micropost:
+          attributes:
+            content:
+              blank: "Nội dung không được bỏ trống"
   layouts:
     header:
       home: "Trang chủ"
@@ -100,6 +103,8 @@ vi:
       delete_fail: "Xóa người dùng thất bại"
     update:
       update_success: "Cập nhật người dùng thành công!"
+    delete_confirm: "Bạn chắc chứ?"
+
 
   errors:
     format: "%{message}"
@@ -140,3 +145,19 @@ vi:
     click_link: "Để thiết lập lại mật khẩu của bạn hãy truy cập vào link dưới đây:"
     link_expire: "Đường link sẽ hết hạn sau 2 tiếng"
     info: "Nếu bạn không yêu cầu thiết lập lại mật khẩu thì vui lòng hãy bỏ qua thư này!"
+
+  micropost:
+    title: "Bài đăng"
+    post_time: "Được đăng %{time} trước"
+    created: "Bài viết đã được tạo!"
+    new: "Tạo bài đăng mới.."
+    post: "Đăng"
+    feed: "Bảng tin"
+    picture_size_error: "nên bé hơn 5MB"
+    error: "Dung lượng file tối đa cho phép là 5MB. Hãy chọn file nhỏ hơn"
+    deleted: "Đã xoá bài đăng"
+
+  datetime:
+    distance_in_words:
+     x_minutes: "%{count} phút"
+     about_x_hours: "khoảng %{count} giờ"

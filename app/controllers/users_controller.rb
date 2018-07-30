@@ -26,6 +26,8 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_url unless @user.activated?
+    @microposts = @user.microposts.order_micropost.page(params[:page])
+                       .per Settings.micropost.microposts_per
   end
 
   def edit; end
@@ -57,13 +59,6 @@ class UsersController < ApplicationController
     return if @user
     flash[:danger] = t ".cannot_find_user"
     redirect_to root_url
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t ".pls_log_in"
-    redirect_to login_url
   end
 
   def correct_user
