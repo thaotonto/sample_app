@@ -104,7 +104,10 @@ vi:
     update:
       update_success: "Cập nhật người dùng thành công!"
     delete_confirm: "Bạn chắc chứ?"
-
+    following: "Following"
+    follower: "Follower"
+    follow: "Theo dõi"
+    unfollow: "Bỏ theo dõi"
 
   errors:
     format: "%{message}"
